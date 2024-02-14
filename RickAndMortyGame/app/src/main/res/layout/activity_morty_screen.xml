@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mortyScreen">
+
+    <TextView
+        android:id="@+id/scoreText2"
+        android:layout_width="127dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="52dp"
+        android:text="SCORE : 0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/timeText2"
+        android:layout_width="123dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="4dp"
+        android:text="TIME : 30"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scoreText2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintStart_toEndOf="@+id/scoreText2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388"
+        app:srcCompat="@drawable/morty" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="126dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mortytxt" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="410dp"
+        android:layout_height="664dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/morty1"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty2"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty3"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty4"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="0"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty5"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="0"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty6"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty7"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty8"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty9"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="1"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty10"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="1"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty11"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty12"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty13"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty14"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="2"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty15"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="2"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty16"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="3"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty17"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="3"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty18"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="3"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty19"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="3"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty20"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="3"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty21"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="4"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty22"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="4"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty23"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="4"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty24"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="4"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty25"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="4"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty26"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="5"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty27"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="5"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty28"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="5"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty29"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="5"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty30"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="5"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty31"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="6"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty32"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="6"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty33"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="6"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty34"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="6"
+            app:srcCompat="@drawable/morty" />
+
+        <ImageView
+            android:id="@+id/morty35"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="6"
+            app:srcCompat="@drawable/morty" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

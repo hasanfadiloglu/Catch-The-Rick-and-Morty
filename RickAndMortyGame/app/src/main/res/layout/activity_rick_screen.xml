@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rickScreen">
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="122dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:text="TIME : 30"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="141dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:text="SCORE : 0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="77dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179"
+        app:srcCompat="@drawable/rick" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="92dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ricktxt" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="407dp"
+        android:layout_height="623dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText">
+
+        <ImageView
+            android:id="@+id/rick1"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick2"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick3"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick4"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="0"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick5"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="0"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick6"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick7"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick8"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick9"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="1"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick10"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="1"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick11"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick12"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick13"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick14"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="2"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick15"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="2"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick16"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="3"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick17"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="3"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick18"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="3"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick19"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="3"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick20"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="3"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick21"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="4"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick22"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="4"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick23"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="4"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick24"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="4"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick25"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="4"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick26"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="5"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick27"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="5"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick28"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="5"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick29"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="5"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick30"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="5"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick31"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="0"
+            app:layout_row="6"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick32"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="6"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick33"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="2"
+            app:layout_row="6"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick34"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="3"
+            app:layout_row="6"
+            app:srcCompat="@drawable/rick" />
+
+        <ImageView
+            android:id="@+id/rick35"
+            android:layout_width="83dp"
+            android:layout_height="90dp"
+            android:onClick="increaseScore"
+            app:layout_column="4"
+            app:layout_row="6"
+            app:srcCompat="@drawable/rick" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

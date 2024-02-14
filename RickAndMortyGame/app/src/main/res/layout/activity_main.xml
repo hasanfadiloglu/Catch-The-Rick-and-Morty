@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/rickandmortyimg"
+        android:layout_width="540dp"
+        android:layout_height="506dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catchthetxt"
+        app:srcCompat="@drawable/rickmorty" />
+
+    <ImageView
+        android:id="@+id/rickandmortytxt"
+        android:layout_width="406dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rickandmortyimg"
+        app:srcCompat="@drawable/rickandmortytitle" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="156dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:onClick="start"
+        android:text="START"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rickandmortytxt" />
+
+    <ImageView
+        android:id="@+id/catchthetxt"
+        android:layout_width="309dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/catchthe" />
+
+    <ImageView
+        android:id="@+id/hflogoimg"
+        android:layout_width="67dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rickandmortytxt"
+        app:srcCompat="@drawable/logooo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
